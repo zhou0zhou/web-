@@ -1,0 +1,75 @@
+body{
+    margin: 10px;
+    padding: 10px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif; 
+    display:center;
+    font-size: 40px; 
+    color:rgba(244, 171, 53);
+    margin:50px auto;
+    padding:5px;
+    text-align: center;
+}
+
+.timetable {
+    display: grid;
+    grid-template-columns: auto repeat(5,1fr); /* 创建6列，第一列宽度自适应，其他列均分剩余空间 */
+    grid-template-rows: auto repeat(5, 1fr); /* 创建6行，高度固定 */
+    gap: 3px; /* 列和行之间的间隔 */
+    margin:10px auto;
+    max-width: 70%; /* 限制表格最大宽度 */
+}
+
+.header {
+    text-align: center;
+    color: #0a0000;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+
+}
+
+.time {
+    color: #0a0000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.course {
+    color:#f3f3f3;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+/* 添加悬停效果 */
+.course:hover {
+    background-color: #f4f882;
+    color: #fff;
+}
+
+.header, .time,.course {
+    background-color: #f9f9fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #f4f4f4; /* 添加细边框 */
+    box-shadow: 0 0 5px rgba(239, 237, 237, 0.692); /* 添加阴影效果 */
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}

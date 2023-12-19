@@ -1,0 +1,61 @@
+div.gallery {
+    border: 1px solid #c2c0c0;
+    transition: border 0.3s; /* 添加过渡效果 */
+    margin: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* 添加阴影效果 使图片更立体*/
+}
+
+div.gallery:hover {
+    border: 1px solid #d3d3d3;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    display: block; /* 去掉底部空白 */
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: #f6f6f6; /* 添加背景色 */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display:center;
+    font-size: 50px; 
+    color:rgb(254, 189, 109);
+    margin:10px;
+    padding:10px;
+    text-align: center;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}

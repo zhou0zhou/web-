@@ -1,0 +1,130 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+
+/*set a max-width 美观一些*/
+        body {
+            max-width: 100%; 
+            margin: 0 auto; /* 水平居中内容 */
+            padding: 10px; /* 添加内边距以保持内容与边框之间的间距 */
+        }
+
+ /* Styles for the first container */
+        .container1 {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .home-icon {
+            cursor: pointer;
+            width: 60px;
+        }
+
+        .login-button {
+            cursor: pointer;
+            border: 5px;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 7px 20px;
+            border-radius: 13px;
+            background-color: #f3f3f2;
+            font-family: 'Montserrat', sans-serif;
+            margin-right: 15px;
+            margin-left: 1400px;
+            height: 25px;
+            max-width:200px ;
+        }
+
+
+        .sets-icon{
+            cursor:pointer;
+            margin-right: 10px;
+            width: 60px;
+            justify-content:flex-end;
+        }
+
+        /* 添加:hover伪类来实现放大效果 */
+        .zoomable-image:hover {
+            transform: scale(1.2); /* 调整放大倍数 */
+            transition: transform 0.3s ease; /* 添加过渡效果 */
+        }
+
+        /* Styles for the second container */
+        .container2 {
+            display: flex;
+            flex-direction: column; /* 垂直方向排列 */
+            align-items: center; /* 居中对齐 */
+            justify-content: center;
+            padding: 35px;
+            margin-top: 135px;
+        }
+
+        .icon-text-container {
+            display: flex;
+            justify-content: center; /* 水平居中对齐 */
+            padding: 20px;
+        }
+
+        .box {
+            text-align: center;
+        }
+
+        .box img {
+            width: 62px;
+            height: auto;
+            cursor: pointer;
+            align-items: center;
+            margin-right: 65px;
+        }
+
+        .box p {
+            margin-right: 65px;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bolder;
+        }
+
+
+        .yellow-input-container {
+            display: flex;
+            align-items: center;
+            width: 55%; /* 与上一行一样长 */
+            background-color: transparent; /* 透明背景，以便显示父容器背景 */
+        }
+        
+        .yellow-input-container input[type="text"] {
+            flex: 1;
+            border: 2px solid #ffd725; 
+            border-radius: 20px; /* 边框圆角 */
+            padding: 15px; /* 内边距，使内容与边框之间有间距 */
+            font-size: 25px; /* 字体大小 */
+        }
+        
+        .yellow-input-container input[type="text"]::placeholder {
+            color: rgb(206, 204, 204); /* 灰色提示文字 */
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .under-box {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            width: 80%;
+            text-align: left;
+            margin-top: 10px; /* 可根据需要进行调整 */
+        }
+        
+        h4 {
+            margin-right:750px; 
+        }
+        
+        lo {
+            color:#b0b0b0;
+            margin-top: 15px;
+            margin-right: 210px; 
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        
+
+        
